@@ -1,115 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>furniturezone</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav id="navbar">
-        <div id="logo">
-            <img src="logo.png" alt="MyOnlineMeal.com">
+  <main class="container-fluid">
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand me-2 bg-dark" href="index.html"><img src="images/HomeLogo.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fi-rr-angle-down"></i>
+      </button>
+      <div class="input-group  mb-4 ms-4" style="width: 60%!important;margin-top: 1rem;">
+        <input type="text" class="form-control" placeholder="Search Products" aria-label="Search Products"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+          <i class="fi-rr-search"></i></a></button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav position-relative start-50 translate-middle-x">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="shop.html">Shop</a>
+          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
         </div>
-        <ul>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#services-container">Services</a></li>
-            <li class="item"><a href="#client-section">Our Clients</a></li>
-            <li class="item"><a href="#contact">Contact Us</a></li>
-        </ul>
+      </div>
+      <a class="navbar-brand ms-2" href="signup.html"><i class="fi-rr-user"></i><a id="userName"></a>
     </nav>
+    <div id="banner-section">
+      <img src="images/banner-img.jpg" class="bannerImg" height="200px" alt="...">
+    </div>
+    <div id="category-section" class="container mt-4 d-flex justify-content-around">
+      <span><img src="images/living-room.png" width="80px" height="80px"></span>
+      <span><img src="images/bed.png" width="80px" height="80px"></span>
+      <span><img src="images/cutlery.png" width="80px" height="80px"></span>
+      <span><img src="images/desk.png" width="80px" height="80px"></span>
+      <span><img src="images/bath.png" width="80px" height="80px"></span>
+      <span><img src="images/cupboard.png" width="80px" height="80px"></span>
+    </div>
+    <div class="container mt-2 d-flex justify-content-around">
+      <span>Living Room</span>
+      <span>Bedroom</span>
+      <span>Kitchen</span>
+      <span>Workspace</span>
+      <span>Bathroom</span>
+      <span>Accessories</span>
+    </div>
+    <div id="offers-section" class="container offerSection d-flex mt-4">
+      <div class="floatLeft me-4">
+        <img src="images/offers.jpg" width="100%">
+      </div>
+      <div class="floatRight">
+        <img src="images/offerImg.jpg" width="72%">
+        <p class="offersInnerDiv text-center text-white fs-5">Find More details <i class="fi-rr-arrow-right"></i></p>
+      </div>
+    </div>
+    </div>
 
-    <section id="home">
-        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-        <button class="btn">Order Now</button>
-    </section>
-
-    <section id="services-container">
-        <h1 class="h-primary center">Our Services</h1>
-        <div id="services">
-            <div class="box">
-                <img src="img/1.png" alt="">
-                <h2 class="h-secondary center">Food Catering</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
-            <div class="box">
-                <img src="img/2.png" alt="">
-                <h2 class="h-secondary center">Bulk Ordering</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
-
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
-            <div class="box">
-                <img src="img/3.png" alt="">
-                <h2 class="h-secondary center">Food Ordering</h2>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
-                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
-                    voluptas beatae facilis labore, omnis sint quae eum.</p>
-            </div>
-        </div>
-    </section>
-    <section id="client-section">
-        <h1 class="h-primary center">Our Clients</h1>
-        <div id="clients">
-            <div class="client-item">
-                <img src="img/logo1.png" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img/logo2.png" alt="Our Client">
-            </div>
-          
-            <div class="client-item">
-                <img src="img/logo4.png" alt="Our Client">
-            </div>
-            <div class="client-item">
-                <img src="img/logo3.png" alt="Our Client">
-            </div>
-        </div>
-
-    </section>
-
-    <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name">
+    <div class="container text-center my-3">
+      <div class="row mx-auto my-auto">
+        <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item py-5 active">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number: </label>
-                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">$7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
                 </div>
-            </form>
+              </div>
+            </div>
+            <div class="carousel-item py-5">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch 01</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Couch</h4>
+                      <img src="images/couch.jpg" class="card-img-top" alt="...">
+                      <p class="card-text">White couch with king size</p>
+                      <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item py-5">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Couch</h4>
+                    <img src="images/couch.jpg" class="card-img-top" alt="...">
+                    <p class="card-text">White couch with king size</p>
+                    <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="carousel-item py-5">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">₹7000</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Couch</h4>
+                  <img src="images/couch.jpg" class="card-img-top" alt="...">
+                  <p class="card-text">White couch with king size</p>
+                  <p class="text-success fw-bold">₹3000 <a class="text-decoration-line-through">$700</a></p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-        <div class="center">
-            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+    </div>
+  </main>
+  <footer>
+    <div align="center" class="row">
+      <div class="col bg-dark pt-4 text-white">
+        <img src="images/HomeLogo.png"><br>
+        <a>Address: 17 Princess Road, London, Greater London NW1 8JR, UK</a><br>
+        <a>Phone: (800) 8001-8588, (0600) 874 548</a><br>
+        <a>Email: info@gmail.com</a>
+      </div>
+      <div align="center" class="col bg-dark text-white">
+        <div class="row">
+          <div class="col-sm-2 mt-4" style="margin-left: 176px;">
+            <a>About Us</a>
+            <a>Shop</a>
+            <a>Features</a>
+            <a>Contact</a>
+          </div>
+          <div class="col-sm-2 mt-4">
+            <a>Shipping</a>
+            <a>Help</a>
+            <a>Privacy Policy</a>
+            <a>FAQs</a>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-4 bg-dark text-white">
+        <a>Newsletter</a><br><br>
+        <a>Sign up for our Newsletter to get more events, promotions & news from us!</a>
+        <div class="input-group  mb-4 ms-4" style="width: 60%!important;margin-top: 1rem;">
+          <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
+            aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+              class="fi-rr-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/general.js"></script>
+ <script src="scripts/dbconnect.js"></script>
 </body>
 
 </html>
